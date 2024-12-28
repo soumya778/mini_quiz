@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: url(bg-quiz.PNG);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main{
+    border: 2px solid rgba(0, 0, 0, 0.486);
+    border-radius: 15px;
+    background: linear-gradient(rgb(114, 114, 206), rgb(155, 204, 155));
+    width: 100vmin;
+}
+#sheet{
+    padding: 20px;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.entry{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px;
+    gap: 9px;
+}
+label{
+    font-weight: bold;
+    font-size: larger;
+}
+input{
+    background-color: beige;
+    padding: 7px;
+    font-size: larger;
+}
+input[type="button"]{
+    background-color: rgb(114, 114, 206);
+    width: 45%;
+}
+#categories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 15px;
+}
+.cateType{
+    background-color: rgb(212, 212, 224);
+    padding: 10px;
+    border: 1px solid rgb(114, 114, 206);
+    border-radius: 20px;
+    font-size: larger;
+    cursor: pointer;
+}
+.cateType.selected{
+    background-color:rgb(184, 241, 98) ;
+}
+#startGameButton{
+    cursor: pointer;
+    width: 95%;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(184, 241, 98);
+    font-size: larger;
+    font-weight: bold;
+}
+#quesContainer{
+    padding: 20px;
+}
+#displayName{
+    font-size: x-large;
+    background-color: rgb(114, 114, 206);
+    color: white;
+}
+.question{
+    font-size: x-large;
+    padding: 10px;
+    
+}
+.answers{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.answer{
+     padding: 15px;
+     font-size: larger;
+     background-color: rgb(201, 201, 240);
+     border-radius: 20px;
+     cursor: pointer;
+}
+.ansSelect{
+    background-color: rgb(114, 114, 206);
+}
+#nextButton{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    background-color:  rgb(184, 241, 98);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+#resContainer{
+    padding: 20px;
+    font-size: x-large;
+}
+#buttonContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+#gameBtn{
+    background-color: white;
+    color:rgb(114, 114, 206);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+#theEnd{
+   font-size: larger;
+   font-weight: 800;
+   margin: 20px;
+}
